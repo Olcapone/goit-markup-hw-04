@@ -1,0 +1,96 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #000000;
+  --hover-text-color: #2196f3;
+  --big-space: 94px;
+  --betw-space: 30px;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.selection {
+  padding-top: 100px;
+  padding-bottom: 56px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+}
+.modal-btn {
+  min-width: 73px;
+  padding: 6px 22px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.filter li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter button:focus,
+button:hover {
+  color: white;
+  background: var(--hover-text-color);
+  border: none;
+}
+.example-list {
+  display: flex;
+  flex-wrap: wrap;
+  /*надо позже разобраться почему не работает
+   width: calc(100% / 4-100px);
+  margin: -30px; 
+  padding-left: 15px;
+  padding-right: 15px; */
+}
+
+.example-list-space {
+  margin-top: var(--betw-space);
+  padding-bottom: var(--big-space);
+}
+
+.example {
+  max-width: 370px;
+  border: 1px solid #eeeeee;
+}
+
+.example,
+.example:visited {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  line-height: 1.88;
+}
+.example-title {
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+}
+.example-info {
+  padding: 20px 24px;
+}
+
+.example:not(:nth-child(3n)) {
+  margin-right: var(--betw-space);
+}
+
+.example:not(:nth-last-child(-n + 3)) {
+  margin-bottom: var(--betw-space);
+}
