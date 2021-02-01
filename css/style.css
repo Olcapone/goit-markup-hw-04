@@ -201,6 +201,7 @@ h1 {
   height: 120px;
   background-color: var(--bgc-icon);
   background-position: 50% 50%;
+  border-radius: 4px;
 }
 .icon {
   background-position: 50% 50%;
