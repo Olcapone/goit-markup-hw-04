@@ -71,6 +71,10 @@ body {
 
 .manu-container {
   display: flex;
+}
+
+.menu {
+  display: block;
   padding-top: var(--menu-space);
   padding-bottom: var(--menu-space);
 }
@@ -79,18 +83,17 @@ body {
   margin-right: 50px;
 }
 
-.tel-container {
-  display: flex;
-  padding-top: var(--menu-space);
-  padding-bottom: var(--menu-space);
-  margin-left: auto;
-}
-
 .menu,
 .menu:visited {
   color: var(--title-text-color);
   text-decoration: none;
 }
+.tel-container {
+  display: flex;
+  margin-left: auto;
+}
+/* contacts */
+
 .tel,
 .tel:visited {
   color: var(--primary-text-color);
@@ -98,6 +101,8 @@ body {
 .tel {
   display: flex;
   align-items: center;
+  padding-top: var(--menu-space);
+  padding-bottom: var(--menu-space);
 }
 
 .menu:hover,
@@ -150,7 +155,7 @@ body {
     url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: absolute;
 }
 .overlay {
   display: flex;
@@ -291,6 +296,7 @@ h2 {
 }
 
 /* Regular customers */
+
 .regular-customer-list {
   display: flex;
   justify-content: center;
