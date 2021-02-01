@@ -3,6 +3,7 @@
   --title-text-color: #000000;
   --hover-text-color: #2196f3;
   --accent-text-color: #ffffff;
+  --bgc-icon: #f5f4fa;
   --big-space: 94px;
   --betw-space: 30px;
   --menu-space: 32px;
@@ -94,6 +95,10 @@ body {
 .tel:visited {
   color: var(--primary-text-color);
 }
+.tel {
+  display: flex;
+  align-items: center;
+}
 
 .menu:hover,
 .menu:focus,
@@ -101,6 +106,17 @@ body {
 .tel:focus {
   color: var(--hover-text-color);
   outline: none;
+}
+.contact-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.tel-icon {
+  margin: 0;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 /* LOGO */
@@ -127,16 +143,14 @@ body {
   min-height: 600px;
   padding: 200px 0px 280px 0px;
   background: #2f303a;
-  background-image: url("../images/hero.jpg");
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  background-image: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)
-  );
 }
 .overlay {
   display: flex;
@@ -160,6 +174,7 @@ body {
 }
 
 .space-sections {
+  padding-top: var(--big-space);
   padding-bottom: var(--big-space);
 }
 
@@ -171,15 +186,24 @@ h1 {
   letter-spacing: 0.06em;
 }
 /* первый блок */
-.advantages {
-  padding-top: var(--big-space);
-}
 
 .advantages-list {
   display: flex;
 }
+
 .list-item {
+  display: flex;
+  flex-direction: column;
   min-width: 270px;
+}
+.icon-thumb {
+  display: block;
+  height: 120px;
+  background-color: var(--bgc-icon);
+  background-position: 50% 50%;
+}
+.icon {
+  background-position: 50% 50%;
 }
 
 .advantages p {
@@ -226,9 +250,6 @@ h2 {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.19;
-
-  padding-top: var(--big-space);
-  padding-bottom: var(--big-space);
 }
 
 .team h3 {
@@ -239,9 +260,12 @@ h2 {
 
 .team-list {
   display: flex;
+  height: 428px;
 }
+
 .team-person {
   padding-bottom: var(--betw-space);
+  background-color: var(--accent-text-color);
 }
 
 .team-person:not(:last-child) {
@@ -252,6 +276,31 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding-top: var(--betw-space);
+}
+.social-list-icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  fill: red;
+}
+
+/* Regular customers */
+.regular-customer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regular-customer-item {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.regular-customer-item:not(:last-child) {
+  margin-right: var(--betw-space);
 }
 
 /* Footer */
@@ -286,4 +335,10 @@ h2 {
 .address,
 .address:visited {
   color: var(--accent-text-color);
+}
+.social-contacts-item {
+  width: 44px;
+  height: 44px;
+}
+.social-contact-icon {
 }
