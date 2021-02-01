@@ -292,21 +292,27 @@ h2 {
 }
 .social-list {
   display: flex;
+  justify-content: center;
+  padding-top: 16px;
 }
 .social-list-item {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
 }
+
 .social-list-link {
   display: flex;
   width: 100%;
-  height: 44px;
-  border-radius: 50%;
 }
 .social-list-icon {
   width: 20px;
   height: 20px;
-  background-color: blue;
-  fill: red;
+
+  fill: #afb1b8;
 }
 
 /* Regular customers */
