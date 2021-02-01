@@ -316,6 +316,8 @@ h2 {
 .social-list-link {
   display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .social-list-icon {
   width: 20px;
