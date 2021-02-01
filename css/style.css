@@ -176,8 +176,10 @@ body {
   border-radius: 4px;
   border: none;
   margin-top: 40px;
-  padding-top: var(--menu-space);
-  padding-bottom: var(--menu-space);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: var(--menu-space);
+  padding-right: var(--menu-space);
 }
 
 .space-sections {
@@ -297,12 +299,12 @@ h2 {
   padding-top: 16px;
 }
 .social-list-item {
-  /* display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 44px;
-  width: 44px;
-  border-radius: 50%; */
+  /* height: 44px;
+  width: 44px; */
+  border-radius: 50%;
 }
 .social-active-link {
   display: flex;
@@ -360,6 +362,12 @@ h2 {
   fill: var(--fill-icon);
 }
 
+.customer-icon-thumb:hover,
+.regular-customer-icon:hover,
+.customer-icon-thumb:focus,
+.regular-customer-icon:focus {
+  fill: var(--hover-text-color);
+}
 /* Footer */
 
 .footer {
@@ -394,8 +402,15 @@ h2 {
   color: var(--accent-text-color);
 }
 .social-contacts-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
 }
-.social-contact-icon {
+.social-cont-link {
+  width: 100%;
+}
+.social-contacts-icon {
+  fill: var(--accent-text-color);
 }
