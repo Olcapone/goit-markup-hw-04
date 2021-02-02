@@ -20,10 +20,9 @@ img {
   display: block;
   max-width: 100%;
 }
-
-.selection {
+.example-list-space {
   padding-top: 100px;
-  padding-bottom: 56px;
+  padding-bottom: var(--big-space);
 }
 
 .filter {
@@ -59,16 +58,7 @@ img {
 .example-list {
   display: flex;
   flex-wrap: wrap;
-  /*надо позже разобраться почему не работает
-   width: calc(100% / 4-100px);
-  margin: -30px; 
-  padding-left: 15px;
-  padding-right: 15px; */
-}
-
-.example-list-space {
-  margin-top: var(--betw-space);
-  padding-bottom: var(--big-space);
+  margin-top: 50px;
 }
 
 .example {
