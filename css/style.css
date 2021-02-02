@@ -336,10 +336,14 @@ h2 {
 
   fill: var(--fill-icon);
 }
+
+/* .social-list-icon:hover,
+.social-list-icon:focus */
+
 .social-active-link:hover,
-.social-list-icon:hover,
 .social-active-link:focus,
-.social-list-icon:focus {
+.social-active-link:hover > svg,
+.social-active-link:focus > svg {
   fill: var(--accent-text-color);
   background-color: var(--hover-text-color);
 }
