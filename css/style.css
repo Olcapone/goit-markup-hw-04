@@ -375,10 +375,13 @@ h2 {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer .container {
+.footer-block {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  height: 215px;
 }
+
 .footer .logo {
   color: var(--accent-text-color);
 
