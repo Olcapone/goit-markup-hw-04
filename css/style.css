@@ -331,9 +331,6 @@ h2 {
   fill: var(--fill-icon);
 }
 
-/* .social-list-icon:hover,
-.social-list-icon:focus */
-
 .social-active-link:hover,
 .social-active-link:focus,
 .social-active-link:hover > svg,
@@ -369,11 +366,13 @@ h2 {
   fill: var(--fill-icon);
 }
 
-.customer-icon-thumb:hover,
-.regular-customer-icon:hover,
-.customer-icon-thumb:focus,
-.regular-customer-icon:focus {
+.customer-icon-thumb:hover > svg,
+.customer-icon-thumb:focus > svg {
   fill: var(--hover-text-color);
+}
+.regular-customer-item:hover,
+.customer-icon-thumb:focus {
+  border: 1px solid var(--hover-text-color);
 }
 /* Footer */
 
