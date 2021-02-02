@@ -110,10 +110,8 @@ body {
 .menu:focus,
 .tel:hover,
 .tel:focus,
-.tel-icon:hover,
-.tel-icon:focus,
-.contact-icon:hover,
-.contact-icon:focus {
+.tel:hover > svg,
+.tel:focus > svg {
   fill: var(--hover-text-color);
   color: var(--hover-text-color);
   outline: none;
