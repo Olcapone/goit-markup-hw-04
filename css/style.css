@@ -373,6 +373,7 @@ h2 {
 .regular-customer-item:hover,
 .customer-icon-thumb:focus {
   border: 1px solid var(--hover-text-color);
+  outline: none;
 }
 /* Footer */
 
