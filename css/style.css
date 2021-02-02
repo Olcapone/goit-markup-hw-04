@@ -110,8 +110,10 @@ body {
 .menu:focus,
 .tel:hover,
 .tel:focus,
-.tel-icon,
-.contact-icon {
+.tel-icon:hover,
+.tel-icon:focus,
+.contact-icon:hover,
+.contact-icon:focus {
   color: var(--hover-text-color);
   outline: none;
 }
