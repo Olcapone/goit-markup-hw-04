@@ -109,7 +109,9 @@ body {
 .menu:hover,
 .menu:focus,
 .tel:hover,
-.tel:focus {
+.tel:focus,
+.tel-icon,
+.contact-icon {
   color: var(--hover-text-color);
   outline: none;
 }
@@ -117,12 +119,14 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 .tel-icon {
   margin: 0;
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 
 /* LOGO */
@@ -372,13 +376,14 @@ h2 {
 
 .footer {
   background: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  /* padding-top: 60px;
+  padding-bottom: 60px; */
 }
 .footer-block {
-  display: flex;
-  flex-wrap: wrap;
   height: 215px;
+}
+.footer .container {
+  display: flex;
 }
 
 .footer .logo {
@@ -387,6 +392,9 @@ h2 {
   margin: 0px;
   padding: 0px;
   margin-bottom: 20px;
+}
+.address-block {
+  padding-right: 70px;
 }
 
 .list-address:not(:last-child) {
@@ -402,6 +410,17 @@ h2 {
 .address,
 .address:visited {
   color: var(--accent-text-color);
+}
+.soc-contact p {
+  color: var(--accent-text-color);
+  line-height: 1.17;
+  font-weight: 700;
+}
+
+.social-contacts-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .social-contacts-item {
   display: flex;
