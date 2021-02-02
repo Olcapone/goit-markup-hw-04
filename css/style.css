@@ -114,6 +114,7 @@ body {
 .tel-icon:focus,
 .contact-icon:hover,
 .contact-icon:focus {
+  fill: var(--hover-text-color);
   color: var(--hover-text-color);
   outline: none;
 }
