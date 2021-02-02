@@ -324,12 +324,12 @@ h2 {
   border-radius: 50%;
 }
 
-.social-list-link {
+/* .social-list-link {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
-}
+} */
 .social-list-icon {
   width: 20px;
   height: 20px;
