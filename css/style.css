@@ -412,5 +412,7 @@ h2 {
   width: 100%;
 }
 .social-contacts-icon {
+  width: 20px;
+  height: 20px;
   fill: var(--accent-text-color);
 }
