@@ -377,7 +377,6 @@ h2 {
 }
 .footer-block {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   height: 215px;
 }
