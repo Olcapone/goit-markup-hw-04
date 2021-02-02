@@ -312,6 +312,10 @@ h2 {
   width: 44px; */
   border-radius: 50%;
 }
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .social-active-link {
   display: flex;
   align-items: center;
@@ -378,14 +382,14 @@ h2 {
 
 .footer {
   background: #2f303a;
-  /* padding-top: 60px;
-  padding-bottom: 60px; */
 }
 .footer-block {
   height: 215px;
+  padding-top: 60px;
 }
 .footer .container {
   display: flex;
+  align-items: center;
 }
 
 .footer .logo {
@@ -425,17 +429,28 @@ h2 {
   align-items: center;
 }
 .social-contacts-item {
+  width: 44px;
+}
+.social-cont-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-}
-.social-cont-link {
   width: 100%;
+  height: 44px;
 }
 .social-contacts-icon {
   width: 20px;
   height: 20px;
   fill: var(--accent-text-color);
+}
+.social-cont-link:hover,
+.social-contacts-icon:hover,
+.social-cont-link:focus,
+.social-contacts-icon:focus {
+  fill: var(--accent-text-color);
+  background-color: var(--hover-text-color);
+}
+
+.social-contacts-item:not(:last-child) {
+  margin-right: 10px;
 }
